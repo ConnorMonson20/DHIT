@@ -83,18 +83,17 @@
       font-size:14px;
     }
 
-    /* Info‐box: 2 columns × 3 rows, now smaller and with larger text */
     .info-card {
       background: linear-gradient(135deg,#fff 0%,#e9e9e9 100%);
       border: 2px solid #bbb;
       border-radius:8px;
       color:#333;
       padding:15px 20px;
-      font-size:16px;            /* increased from 14px */
+      font-size:16px;
       text-align:left;
       box-shadow:0 2px 6px rgba(0,0,0,0.15);
       overflow-y:auto;
-      min-height:120px;          /* slightly reduced height */
+      min-height:120px;
       margin-top:50px;
       width:700px;
       display:grid;
@@ -105,7 +104,7 @@
     .info-card .label {
       font-weight:bold;
       text-decoration:underline;
-      font-size:18px;            /* labels slightly larger */
+      font-size:18px;
     }
     .info-card.highlight {
       background:#fefbd8;
@@ -130,7 +129,6 @@
     </div>
 
     <div class="info-card" id="info-box">
-      <!-- 6 placeholders total: header + 5 blanks -->
       <div style="grid-column: span 2">Hover over a card to see details here.</div>
       <div></div><div></div><div></div><div></div><div></div>
     </div>
@@ -220,7 +218,7 @@
             [
               ["Name", el.name],
               ["Category", el.category],
-              ["Individual Example 1", el.example1]
+              ["Example 1", el.example1]
             ].forEach(([label,value])=>{
               const lbl = document.createElement("div");
               lbl.className = "label";
