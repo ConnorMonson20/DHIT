@@ -1,0 +1,706 @@
+[
+  {
+    "symbol": "He",
+    "name": "Healthcare Access",
+    "number": 1,
+    "column": 1,
+    "row": 2,
+    "category": "medical"
+  },
+  {
+    "symbol": "Qo",
+    "name": "Quality of Healthcare",
+    "number": 2,
+    "column": 1,
+    "row": 3,
+    "category": "medical"
+  },
+  {
+    "symbol": "Pt",
+    "name": "Patient Engagement",
+    "number": 3,
+    "column": 1,
+    "row": 4,
+    "category": "medical"
+  },
+  {
+    "symbol": "Hi",
+    "name": "Health Insurance Coverage",
+    "number": 4,
+    "column": 1,
+    "row": 5,
+    "category": "medical"
+  },
+  {
+    "symbol": "Pd",
+    "name": "Preventive Care Utilization",
+    "number": 5,
+    "column": 1,
+    "row": 6,
+    "category": "medical"
+  },
+  {
+    "symbol": "Mf",
+    "name": "Medication Affordability",
+    "number": 6,
+    "column": 1,
+    "row": 7,
+    "category": "medical"
+  },
+  {
+    "symbol": "Te",
+    "name": "Telehealth Access",
+    "number": 7,
+    "column": 2,
+    "row": 2,
+    "category": "medical"
+  },
+  {
+    "symbol": "Hp",
+    "name": "Healthcare Provider Availability",
+    "number": 8,
+    "column": 2,
+    "row": 3,
+    "category": "medical"
+  },
+  {
+    "symbol": "Mnh",
+    "name": "Maternal & Infant Health",
+    "number": 9,
+    "column": 2,
+    "row": 4,
+    "category": "medical"
+  },
+  {
+    "symbol": "Di",
+    "name": "Digital Literacy & Health Tech Use",
+    "number": 10,
+    "column": 2,
+    "row": 5,
+    "category": "medical"
+  },
+  {
+    "symbol": "Cu",
+    "name": "Cultural Competence in Healthcare",
+    "number": 11,
+    "column": 2,
+    "row": 6,
+    "category": "medical"
+  },
+  {
+    "symbol": "Ae",
+    "name": "Aging & Elderly Care Access",
+    "number": 12,
+    "column": 2,
+    "row": 7,
+    "category": "medical"
+  },
+  {
+    "symbol": "Ai",
+    "name": "AI & Digital Health Impact",
+    "number": 13,
+    "column": 3,
+    "row": 2,
+    "category": "medical"
+  },
+  {
+    "symbol": "Dd",
+    "name": "Data Privacy & Security in Health",
+    "number": 14,
+    "column": 3,
+    "row": 3,
+    "category": "medical"
+  },
+  {
+    "symbol": "Ca",
+    "name": "Caregiver Availability",
+    "number": 15,
+    "column": 3,
+    "row": 4,
+    "category": "medical"
+  },
+  {
+    "symbol": "Lh",
+    "name": "Literacy & Health Communication",
+    "number": 16,
+    "column": 3,
+    "row": 5,
+    "category": "medical"
+  },
+  {
+    "symbol": "Da",
+    "name": "Disability Access & Accommodations",
+    "number": 17,
+    "column": 3,
+    "row": 6,
+    "category": "medical"
+  },
+  {
+    "symbol": "Ht",
+    "name": "Healthcare Trust & Misinformation",
+    "number": 18,
+    "column": 3,
+    "row": 7,
+    "category": "medical"
+  },
+  {
+    "symbol": "Po",
+    "name": "Pollution",
+    "number": 19,
+    "column": 4,
+    "row": 4,
+    "category": "environment"
+  },
+  {
+    "symbol": "Lo",
+    "name": "Location",
+    "number": 20,
+    "column": 4,
+    "row": 5,
+    "category": "environment"
+  },
+  {
+    "symbol": "Ex",
+    "name": "Exposure to Firearms",
+    "number": 21,
+    "column": 4,
+    "row": 6,
+    "category": "environment"
+  },
+  {
+    "symbol": "Al",
+    "name": "Allergens",
+    "number": 22,
+    "column": 4,
+    "row": 7,
+    "category": "environment"
+  },
+  {
+    "symbol": "Cl",
+    "name": "Climate Change",
+    "number": 23,
+    "column": 5,
+    "row": 4,
+    "category": "environment"
+  },
+  {
+    "symbol": "Wa",
+    "name": "Water Quality",
+    "number": 24,
+    "column": 5,
+    "row": 5,
+    "category": "environment"
+  },
+  {
+    "symbol": "Hs",
+    "name": "Housing Stability",
+    "number": 25,
+    "column": 5,
+    "row": 6,
+    "category": "environment"
+  },
+  {
+    "symbol": "Vt",
+    "name": "Vocational Training",
+    "number": 26,
+    "column": 5,
+    "row": 7,
+    "category": "environment"
+  },
+  {
+    "symbol": "Jo",
+    "name": "Job Opportunities",
+    "number": 27,
+    "column": 6,
+    "row": 4,
+    "category": "environment"
+  },
+  {
+    "symbol": "Wi",
+    "name": "Walkability",
+    "number": 28,
+    "column": 6,
+    "row": 5,
+    "category": "environment"
+  },
+  {
+    "symbol": "Lb",
+    "name": "Lead & Heavy Metal Exposure",
+    "number": 29,
+    "column": 6,
+    "row": 6,
+    "category": "environment"
+  },
+  {
+    "symbol": "Ep",
+    "name": "Epidemic & Pandemic Impact",
+    "number": 30,
+    "column": 6,
+    "row": 7,
+    "category": "environment"
+  },
+  {
+    "symbol": "Rt",
+    "name": "Rural vs. Urban Disparities",
+    "number": 31,
+    "column": 7,
+    "row": 4,
+    "category": "environment"
+  },
+  {
+    "symbol": "Dl",
+    "name": "Disaster & Emergency Preparedness",
+    "number": 32,
+    "column": 7,
+    "row": 5,
+    "category": "environment"
+  },
+  {
+    "symbol": "Aq",
+    "name": "Air Quality & Industrial Exposure",
+    "number": 33,
+    "column": 7,
+    "row": 6,
+    "category": "environment"
+  },
+  {
+    "symbol": "Tr",
+    "name": "Transportation Safety",
+    "number": 34,
+    "column": 7,
+    "row": 7,
+    "category": "environment"
+  },
+  {
+    "symbol": "Cr",
+    "name": "Crime & Community Safety",
+    "number": 35,
+    "column": 8,
+    "row": 4,
+    "category": "environment"
+  },
+  {
+    "symbol": "Hb",
+    "name": "Home & Built Environment",
+    "number": 36,
+    "column": 8,
+    "row": 5,
+    "category": "environment"
+  },
+  {
+    "symbol": "Mo",
+    "name": "Mobility & Transportation Barriers",
+    "number": 37,
+    "column": 8,
+    "row": 6,
+    "category": "environment"
+  },
+  {
+    "symbol": "En",
+    "name": "Environmental Justice & Policies",
+    "number": 38,
+    "column": 8,
+    "row": 7,
+    "category": "environment"
+  },
+  {
+    "symbol": "Cl",
+    "name": "Conscientiousness Level",
+    "number": 39,
+    "column": 9,
+    "row": 4,
+    "category": "individual"
+  },
+  {
+    "symbol": "Pa",
+    "name": "Physical Activity",
+    "number": 40,
+    "column": 9,
+    "row": 5,
+    "category": "individual"
+  },
+  {
+    "symbol": "Si",
+    "name": "Sleep Patterns",
+    "number": 41,
+    "column": 9,
+    "row": 6,
+    "category": "individual"
+  },
+  {
+    "symbol": "Nm",
+    "name": "Negative Mood & Stress",
+    "number": 42,
+    "column": 9,
+    "row": 7,
+    "category": "individual"
+  },
+  {
+    "symbol": "Sf",
+    "name": "Self-efficacy",
+    "number": 43,
+    "column": 10,
+    "row": 4,
+    "category": "individual"
+  },
+  {
+    "symbol": "Sm",
+    "name": "Smoking/Tobacco Use",
+    "number": 44,
+    "column": 10,
+    "row": 5,
+    "category": "individual"
+  },
+  {
+    "symbol": "Ac",
+    "name": "Alcohol Consumption",
+    "number": 45,
+    "column": 10,
+    "row": 6,
+    "category": "individual"
+  },
+  {
+    "symbol": "Nv",
+    "name": "Nutrition & Diet",
+    "number": 46,
+    "column": 10,
+    "row": 7,
+    "category": "individual"
+  },
+  {
+    "symbol": "Oi",
+    "name": "Optimism Level",
+    "number": 47,
+    "column": 11,
+    "row": 3,
+    "category": "individual"
+  },
+  {
+    "symbol": "Se",
+    "name": "Sexual Health & Behavior",
+    "number": 48,
+    "column": 11,
+    "row": 4,
+    "category": "individual"
+  },
+  {
+    "symbol": "Hc",
+    "name": "Healthcare-Seeking Behavior",
+    "number": 49,
+    "column": 11,
+    "row": 5,
+    "category": "individual"
+  },
+  {
+    "symbol": "Dr",
+    "name": "Substance Use & Addiction",
+    "number": 50,
+    "column": 11,
+    "row": 6,
+    "category": "individual"
+  },
+  {
+    "symbol": "Eb",
+    "name": "Exercise Habits",
+    "number": 51,
+    "column": 11,
+    "row": 7,
+    "category": "individual"
+  },
+  {
+    "symbol": "Cf",
+    "name": "Cognitive Function",
+    "number": 52,
+    "column": 12,
+    "row": 3,
+    "category": "individual"
+  },
+  {
+    "symbol": "Ls",
+    "name": "Life Satisfaction Level",
+    "number": 53,
+    "column": 12,
+    "row": 4,
+    "category": "individual"
+  },
+  {
+    "symbol": "Sw",
+    "name": "Spiritual Well-being",
+    "number": 54,
+    "column": 12,
+    "row": 5,
+    "category": "individual"
+  },
+  {
+    "symbol": "Sn",
+    "name": "Sensory System",
+    "number": 55,
+    "column": 12,
+    "row": 6,
+    "category": "individual"
+  },
+  {
+    "symbol": "Sv",
+    "name": "Stress Levels",
+    "number": 56,
+    "column": 12,
+    "row": 7,
+    "category": "individual"
+  },
+  {
+    "symbol": "Bs",
+    "name": "Body Structure",
+    "number": 57,
+    "column": 13,
+    "row": 2,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Ag",
+    "name": "Aging Factors",
+    "number": 58,
+    "column": 13,
+    "row": 3,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Ch",
+    "name": "Chronic Disease Susceptibility",
+    "number": 59,
+    "column": 13,
+    "row": 4,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Im",
+    "name": "Immune System Health",
+    "number": 60,
+    "column": 13,
+    "row": 5,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Md",
+    "name": "Metabolic Disorders",
+    "number": 61,
+    "column": 13,
+    "row": 6,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Bf",
+    "name": "Body Function",
+    "number": 62,
+    "column": 13,
+    "row": 7,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Sg",
+    "name": "Sex & Gender",
+    "number": 63,
+    "column": 14,
+    "row": 2,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Ge",
+    "name": "Genetics",
+    "number": 64,
+    "column": 14,
+    "row": 3,
+    "category": "genetics"
+  },
+  {
+    "symbol": "Ss",
+    "name": "Social Status",
+    "number": 65,
+    "column": 14,
+    "row": 4,
+    "category": "socio"
+  },
+  {
+    "symbol": "Re",
+    "name": "Race & Ethnicity",
+    "number": 66,
+    "column": 14,
+    "row": 5,
+    "category": "socio"
+  },
+  {
+    "symbol": "Ed",
+    "name": "Educational Attainment",
+    "number": 67,
+    "column": 14,
+    "row": 6,
+    "category": "socio"
+  },
+  {
+    "symbol": "Em",
+    "name": "Employment Status",
+    "number": 68,
+    "column": 14,
+    "row": 7,
+    "category": "socio"
+  },
+  {
+    "symbol": "Sc",
+    "name": "Social Connectedness",
+    "number": 69,
+    "column": 15,
+    "row": 2,
+    "category": "socio"
+  },
+  {
+    "symbol": "Fi",
+    "name": "Financial Stability",
+    "number": 70,
+    "column": 15,
+    "row": 3,
+    "category": "socio"
+  },
+  {
+    "symbol": "Ct",
+    "name": "Culture/Tradition",
+    "number": 71,
+    "column": 15,
+    "row": 4,
+    "category": "socio"
+  },
+  {
+    "symbol": "Ce",
+    "name": "Childhood Experiences",
+    "number": 72,
+    "column": 15,
+    "row": 5,
+    "category": "socio"
+  },
+  {
+    "symbol": "St",
+    "name": "Stigma & Discrimination",
+    "number": 73,
+    "column": 15,
+    "row": 6,
+    "category": "socio"
+  },
+  {
+    "symbol": "Oc",
+    "name": "Occupation",
+    "number": 74,
+    "column": 15,
+    "row": 7,
+    "category": "socio"
+  },
+  {
+    "symbol": "Ic",
+    "name": "Incarceration History",
+    "number": 75,
+    "column": 16,
+    "row": 1,
+    "category": "socio"
+  },
+  {
+    "symbol": "La",
+    "name": "Language Barriers",
+    "number": 76,
+    "column": 16,
+    "row": 2,
+    "category": "socio"
+  },
+  {
+    "symbol": "Me",
+    "name": "Mental Health Support",
+    "number": 77,
+    "column": 16,
+    "row": 3,
+    "category": "socio"
+  },
+  {
+    "symbol": "Al",
+    "name": "Access to Legal Resources",
+    "number": 78,
+    "column": 16,
+    "row": 4,
+    "category": "socio"
+  },
+  {
+    "symbol": "Cp",
+    "name": "Civic Duty & Participation",
+    "number": 79,
+    "column": 16,
+    "row": 5,
+    "category": "socio"
+  },
+  {
+    "symbol": "Co",
+    "name": "Community Cohesion",
+    "number": 80,
+    "column": 16,
+    "row": 6,
+    "category": "socio"
+  },
+  {
+    "symbol": "Pv",
+    "name": "Poverty Level",
+    "number": 81,
+    "column": 16,
+    "row": 7,
+    "category": "socio"
+  },
+  {
+    "number": 82,
+    "symbol": "Ri",
+    "name": "Recidivism Impact",
+    "row": 1,
+    "column": 17,
+    "category": "socio"
+  },
+  {
+    "symbol": "Ho",
+    "name": "Housing & Homelessness",
+    "number": 83,
+    "column": 17,
+    "row": 2,
+    "category": "socio"
+  },
+  {
+    "symbol": "Jq",
+    "name": "Job Quality & Workplace Safety",
+    "number": 84,
+    "column": 17,
+    "row": 3,
+    "category": "socio"
+  },
+  {
+    "symbol": "Sq",
+    "name": "Socioeconomic Inequalities",
+    "number": 85,
+    "column": 17,
+    "row": 4,
+    "category": "socio"
+  },
+  {
+    "symbol": "Fu",
+    "name": "Food Security & Hunger",
+    "number": 86,
+    "column": 17,
+    "row": 5,
+    "category": "socio"
+  },
+  {
+    "symbol": "Vi",
+    "name": "Violence & Trauma Exposure",
+    "number": 87,
+    "column": 17,
+    "row": 6,
+    "category": "socio"
+  },
+  {
+    "symbol": "Sp",
+    "name": "Social Participation",
+    "number": 88,
+    "column": 17,
+    "row": 7,
+    "category": "socio"
+  }
+]

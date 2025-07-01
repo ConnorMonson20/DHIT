@@ -1,0 +1,618 @@
+[
+  {
+    "number": 1,
+    "symbol": "He",
+    "name": "Healthcare Access",
+    "category": "Medical Care",
+    "example1": "A rural patient can\u2019t find a nearby doctor."
+  },
+  {
+    "number": 2,
+    "symbol": "Qo",
+    "name": "Quality of Healthcare",
+    "category": "Medical Care",
+    "example1": "A hospital has many readmissions for infections."
+  },
+  {
+    "number": 3,
+    "symbol": "Pt",
+    "name": "Patient Engagement",
+    "category": "Medical Care",
+    "example1": "A patient tracks blood sugar daily."
+  },
+  {
+    "number": 4,
+    "symbol": "Hi",
+    "name": "Health Insurance Coverage",
+    "category": "Medical Care",
+    "example1": "A worker gets coverage through their job."
+  },
+  {
+    "number": 5,
+    "symbol": "Pd",
+    "name": "Preventive Care Utilization",
+    "category": "Medical Care",
+    "example1": "A teen gets the HPV vaccine."
+  },
+  {
+    "number": 6,
+    "symbol": "Mf",
+    "name": "Medication Affordability",
+    "category": "Medical Care",
+    "example1": "A person skips doses to save money."
+  },
+  {
+    "number": 7,
+    "symbol": "Te",
+    "name": "Telehealth Access",
+    "category": "Medical Care",
+    "example1": "A doctor visit done by video call."
+  },
+  {
+    "number": 8,
+    "symbol": "Hp",
+    "name": "Healthcare Provider Availability",
+    "category": "Medical Care",
+    "example1": "No doctors accepting new patients nearby."
+  },
+  {
+    "number": 9,
+    "symbol": "Mh",
+    "name": "Maternal & Infant Health",
+    "category": "Medical Care",
+    "example1": "A baby born with low weight."
+  },
+  {
+    "number": 10,
+    "symbol": "Di",
+    "name": "Digital Literacy & Health Tech Use",
+    "category": "Medical Care",
+    "example1": "A patient logs into a health portal."
+  },
+  {
+    "number": 11,
+    "symbol": "Cu",
+    "name": "Cultural Competence in Healthcare",
+    "category": "Medical Care",
+    "example1": "A clinic uses translators for patients."
+  },
+  {
+    "number": 12,
+    "symbol": "Ae",
+    "name": "Aging & Elderly Care Access",
+    "category": "Medical Care",
+    "example1": "An older person gets home visits."
+  },
+  {
+    "number": 13,
+    "symbol": "Ai",
+    "name": "AI & Digital Health Impact",
+    "category": "Medical Care",
+    "example1": "An app reminds you to take meds."
+  },
+  {
+    "number": 14,
+    "symbol": "Dd",
+    "name": "Data Privacy & Security in Health",
+    "category": "Medical Care",
+    "example1": "A breach leaks patient records."
+  },
+  {
+    "number": 15,
+    "symbol": "Ca",
+    "name": "Caregiver Availability",
+    "category": "Medical Care",
+    "example1": "An elder relies on a family caregiver."
+  },
+  {
+    "number": 16,
+    "symbol": "Lh",
+    "name": "Literacy & Health Communication",
+    "category": "Medical Care",
+    "example1": "Someone misunderstands a prescription."
+  },
+  {
+    "number": 17,
+    "symbol": "Da",
+    "name": "Disability Access & Accommodations",
+    "category": "Medical Care",
+    "example1": "A clinic lacks wheelchair ramps."
+  },
+  {
+    "number": 18,
+    "symbol": "Ht",
+    "name": "Healthcare Trust & Misinformation",
+    "category": "Medical Care",
+    "example1": "False info spreads online."
+  },
+  {
+    "number": 19,
+    "symbol": "Po",
+    "name": "Pollution",
+    "category": "Environment",
+    "example1": "A factory pollutes the air nearby."
+  },
+  {
+    "number": 20,
+    "symbol": "Lo",
+    "name": "Location",
+    "category": "Environment",
+    "example1": "A city has lots of green space."
+  },
+  {
+    "number": 21,
+    "symbol": "Ex",
+    "name": "Exposure to Firearms",
+    "category": "Environment",
+    "example1": "Unlocked guns in the home."
+  },
+  {
+    "number": 22,
+    "symbol": "Al",
+    "name": "Allergens",
+    "category": "Environment",
+    "example1": "Spring pollen spikes cause sneezing."
+  },
+  {
+    "number": 23,
+    "symbol": "Cl",
+    "name": "Climate Change",
+    "category": "Environment",
+    "example1": "Heat waves cause dehydration."
+  },
+  {
+    "number": 24,
+    "symbol": "Wa",
+    "name": "Water Quality",
+    "category": "Environment",
+    "example1": "A city\u2019s water has lead pipes."
+  },
+  {
+    "number": 25,
+    "symbol": "Hs",
+    "name": "Housing Stability",
+    "category": "Environment",
+    "example1": "A family is evicted due to rising rent."
+  },
+  {
+    "number": 26,
+    "symbol": "Vt",
+    "name": "Vocational Training",
+    "category": "Environment",
+    "example1": "A teen joins a welding class."
+  },
+  {
+    "number": 27,
+    "symbol": "Jo",
+    "name": "Job Opportunities",
+    "category": "Environment",
+    "example1": "A town adds a new factory."
+  },
+  {
+    "number": 28,
+    "symbol": "Wi",
+    "name": "Walkability",
+    "category": "Environment",
+    "example1": "Sidewalks connect parks and shops."
+  },
+  {
+    "number": 29,
+    "symbol": "Lb",
+    "name": "Lead & Heavy Metal Exposure",
+    "category": "Environment",
+    "example1": "A child drinks tap water with high lead levels."
+  },
+  {
+    "number": 30,
+    "symbol": "Ep",
+    "name": "Epidemic & Pandemic Impact",
+    "category": "Environment",
+    "example1": "A store clerk loses income during a flu outbreak."
+  },
+  {
+    "number": 31,
+    "symbol": "Rt",
+    "name": "Rural vs. Urban Disparities",
+    "category": "Environment",
+    "example1": "A farmer drives hours for a specialist visit."
+  },
+  {
+    "number": 32,
+    "symbol": "Dl",
+    "name": "Disaster & Emergency Preparedness",
+    "category": "Environment",
+    "example1": "A family lacks supplies during a winter blackout."
+  },
+  {
+    "number": 33,
+    "symbol": "Aq",
+    "name": "Air Quality & Industrial Exposure",
+    "category": "Environment",
+    "example1": "A boy coughs from fumes near a highway."
+  },
+  {
+    "number": 34,
+    "symbol": "Tr",
+    "name": "Transportation Safety & Injuries",
+    "category": "Environment",
+    "example1": "A cyclist is injured on a road without shoulders."
+  },
+  {
+    "number": 35,
+    "symbol": "Cr",
+    "name": "Crime & Community Safety",
+    "category": "Environment",
+    "example1": "A shooting closes the local park for weeks."
+  },
+  {
+    "number": 36,
+    "symbol": "Hb",
+    "name": "Home & Built Environment",
+    "category": "Environment",
+    "example1": "A cracked stairwell causes a tenant\u2019s fall."
+  },
+  {
+    "number": 37,
+    "symbol": "Mo",
+    "name": "Mobility & Transportation Barriers",
+    "category": "Environment",
+    "example1": "A worker misses appointments due to late buses."
+  },
+  {
+    "number": 38,
+    "symbol": "En",
+    "name": "Environmental Justice & Policies",
+    "category": "Environment",
+    "example1": "Residents fight a factory near their school."
+  },
+  {
+    "number": 39,
+    "symbol": "Cl",
+    "name": "Conscientiousness Level",
+    "category": "Individual Behavior",
+    "example1": "A student packs healthy lunches each night."
+  },
+  {
+    "number": 40,
+    "symbol": "Pa",
+    "name": "Physical Activity",
+    "category": "Individual Behavior",
+    "example1": "A teen plays soccer after school."
+  },
+  {
+    "number": 41,
+    "symbol": "Sl",
+    "name": "Sleep Patterns",
+    "category": "Individual Behavior",
+    "example1": "A student sleeps 8 hours nightly."
+  },
+  {
+    "number": 42,
+    "symbol": "Nm",
+    "name": "Negative Mood & Affects",
+    "category": "Individual Behavior",
+    "example1": "A parent loses sleep from constant job stress."
+  },
+  {
+    "number": 43,
+    "symbol": "Sf",
+    "name": "Self-efficacy",
+    "category": "Individual Behavior",
+    "example1": "A student studies harder after a bad grade."
+  },
+  {
+    "number": 44,
+    "symbol": "Sm",
+    "name": "Smoking/Tobacco Use",
+    "category": "Individual Behavior",
+    "example1": "A teen tries vaping at school."
+  },
+  {
+    "number": 45,
+    "symbol": "Ac",
+    "name": "Alcohol Consumption",
+    "category": "Individual Behavior",
+    "example1": "A party has heavy drinking."
+  },
+  {
+    "number": 46,
+    "symbol": "Nv",
+    "name": "Nutrition & Diet",
+    "category": "Individual Behavior",
+    "example1": "A family eats lots of veggies."
+  },
+  {
+    "number": 47,
+    "symbol": "Ol",
+    "name": "Optimism Level",
+    "category": "Individual Behavior",
+    "example1": "A student stays upbeat despite a setback."
+  },
+  {
+    "number": 48,
+    "symbol": "Se",
+    "name": "Sexual Health & Behavior",
+    "category": "Individual Behavior",
+    "example1": "Teens learn about consent in school."
+  },
+  {
+    "number": 49,
+    "symbol": "Hc",
+    "name": "Healthcare-Seeking Behavior",
+    "category": "Individual Behavior",
+    "example1": "A person waits too long to see a doctor."
+  },
+  {
+    "number": 50,
+    "symbol": "Dr",
+    "name": "Substance Use & Addiction",
+    "category": "Individual Behavior",
+    "example1": "A person uses opioids after surgery and can't stop."
+  },
+  {
+    "number": 51,
+    "symbol": "Eh",
+    "name": "Exercise Habits",
+    "category": "Individual Behavior",
+    "example1": "A person joins a morning yoga group."
+  },
+  {
+    "number": 52,
+    "symbol": "Cf",
+    "name": "Cognitive Function",
+    "category": "Individual Behavior",
+    "example1": "A senior does puzzles daily."
+  },
+  {
+    "number": 53,
+    "symbol": "Ls",
+    "name": "Life Satisfaction Level",
+    "category": "Individual Behavior",
+    "example1": "Someone feels proud of their routine."
+  },
+  {
+    "number": 54,
+    "symbol": "Sw",
+    "name": "Spiritual Well-being",
+    "category": "Individual Behavior",
+    "example1": "A person prays or meditates daily."
+  },
+  {
+    "number": 55,
+    "symbol": "Sn",
+    "name": "Sensory System",
+    "category": "Individual Behavior",
+    "example1": "A person wears hearing aids."
+  },
+  {
+    "number": 56,
+    "symbol": "Sv",
+    "name": "Stress Levels",
+    "category": "Individual Behavior",
+    "example1": "A worker feels overwhelmed at deadlines."
+  },
+  {
+    "number": 57,
+    "symbol": "Bs",
+    "name": "Body Structure",
+    "category": "Genetics & Biology",
+    "example1": "A child has scoliosis."
+  },
+  {
+    "number": 58,
+    "symbol": "Ag",
+    "name": "Aging Factors",
+    "category": "Genetics & Biology",
+    "example1": "Skin wrinkles over time."
+  },
+  {
+    "number": 59,
+    "symbol": "Ch",
+    "name": "Chronic Disease Susceptibility",
+    "category": "Genetics & Biology",
+    "example1": "Heart disease runs in the family."
+  },
+  {
+    "number": 60,
+    "symbol": "In",
+    "name": "Immune System Health",
+    "category": "Genetics & Biology",
+    "example1": "A vaccine helps prevent flu."
+  },
+  {
+    "number": 61,
+    "symbol": "Md",
+    "name": "Metabolic Disorders",
+    "category": "Genetics & Biology",
+    "example1": "Diabetes affects sugar control."
+  },
+  {
+    "number": 62,
+    "symbol": "Bf",
+    "name": "Body Function",
+    "category": "Genetics & Biology",
+    "example1": "A heart pumps blood efficiently."
+  },
+  {
+    "number": 63,
+    "symbol": "Sg",
+    "name": "Sex & Gender",
+    "category": "Genetics & Biology",
+    "example1": "Women face unique heart disease risks."
+  },
+  {
+    "number": 64,
+    "symbol": "Ge",
+    "name": "Genetics",
+    "category": "Genetics & Biology",
+    "example1": "A family history of breast cancer."
+  },
+  {
+    "number": 65,
+    "symbol": "Ss",
+    "name": "Social Status",
+    "category": "Socio-economic Circumstances",
+    "example1": "A CEO has more resources than a cashier."
+  },
+  {
+    "number": 66,
+    "symbol": "Re",
+    "name": "Race & Ethnicity",
+    "category": "Socio-economic Circumstances",
+    "example1": "Black patients may face bias in pain treatment."
+  },
+  {
+    "number": 67,
+    "symbol": "Ed",
+    "name": "Educational Attainment",
+    "category": "Socio-economic Circumstances",
+    "example1": "High school grads live longer on average."
+  },
+  {
+    "number": 68,
+    "symbol": "Em",
+    "name": "Employment Status",
+    "category": "Socio-economic Circumstances",
+    "example1": "A person loses their job unexpectedly."
+  },
+  {
+    "number": 69,
+    "symbol": "Sc",
+    "name": "Social Connectedness",
+    "category": "Socio-economic Circumstances",
+    "example1": "Neighbors gather for weekly potlucks."
+  },
+  {
+    "number": 70,
+    "symbol": "Fi",
+    "name": "Financial Stability",
+    "category": "Socio-economic Circumstances",
+    "example1": "A family saves for emergencies."
+  },
+  {
+    "number": 71,
+    "symbol": "Ct",
+    "name": "Culture/Tradition",
+    "category": "Socio-economic Circumstances",
+    "example1": "Family meals bring generations together."
+  },
+  {
+    "number": 72,
+    "symbol": "Ce",
+    "name": "Childhood Experiences",
+    "category": "Socio-economic Circumstances",
+    "example1": "A child grows up in a loving home."
+  },
+  {
+    "number": 73,
+    "symbol": "St",
+    "name": "Stigma & Discrimination",
+    "category": "Socio-economic Circumstances",
+    "example1": "Someone hides their mental health diagnosis."
+  },
+  {
+    "number": 74,
+    "symbol": "Oc",
+    "name": "Occupation",
+    "category": "Socio-economic Circumstances",
+    "example1": "A nurse faces daily high stress."
+  },
+  {
+    "number": 75,
+    "symbol": "Ic",
+    "name": "Incarceration History",
+    "category": "Socio-economic Circumstances",
+    "example1": "A person struggles to find housing after release."
+  },
+  {
+    "number": 76,
+    "symbol": "La",
+    "name": "Language Barriers",
+    "category": "Socio-economic Circumstances",
+    "example1": "A patient can\u2019t read medication labels."
+  },
+  {
+    "number": 77,
+    "symbol": "Me",
+    "name": "Mental Health Support",
+    "category": "Socio-economic Circumstances",
+    "example1": "A teen gets therapy for anxiety."
+  },
+  {
+    "number": 78,
+    "symbol": "Ac",
+    "name": "Access to Legal Resources",
+    "category": "Socio-economic Circumstances",
+    "example1": "A tenant needs help fighting eviction."
+  },
+  {
+    "number": 79,
+    "symbol": "Cd",
+    "name": "Civic Duty & Participation",
+    "category": "Socio-economic Circumstances",
+    "example1": "Voting in local elections."
+  },
+  {
+    "number": 80,
+    "symbol": "Cc",
+    "name": "Community Cohesion",
+    "category": "Socio-economic Circumstances",
+    "example1": "A neighborhood forms a safety watch."
+  },
+  {
+    "number": 81,
+    "symbol": "Pv",
+    "name": "Poverty Level",
+    "category": "Socio-economic Circumstances",
+    "example1": "A child skips meals regularly."
+  },
+  {
+    "number": 82,
+    "symbol": "Ri",
+    "name": "Religious Involvement",
+    "category": "Socio-economic Circumstances",
+    "example1": "A person attends weekly services."
+  },
+  {
+    "number": 83,
+    "symbol": "Ho",
+    "name": "Housing & Homelessness",
+    "category": "Socio-economic Circumstances",
+    "example1": "A person sleeps in a shelter."
+  },
+  {
+    "number": 84,
+    "symbol": "Jq",
+    "name": "Job Quality & Workplace Safety",
+    "category": "Socio-economic Circumstances",
+    "example1": "Poor lighting leads to falls at work."
+  },
+  {
+    "number": 85,
+    "symbol": "Sq",
+    "name": "Socioeconomic Inequalities",
+    "category": "Socio-economic Circumstances",
+    "example1": "Some groups live shorter lives due to poverty."
+  },
+  {
+    "number": 86,
+    "symbol": "Fu",
+    "name": "Food Security & Hunger",
+    "category": "Socio-economic Circumstances",
+    "example1": "Kids go to bed hungry."
+  },
+  {
+    "number": 87,
+    "symbol": "Vi",
+    "name": "Violence & Trauma Exposure",
+    "category": "Socio-economic Circumstances",
+    "example1": "A child sees domestic violence."
+  },
+  {
+    "number": 88,
+    "symbol": "Sp",
+    "name": "Social Participation",
+    "category": "Socio-economic Circumstances",
+    "example1": "A senior joins a card group."
+  }
+]
