@@ -11,12 +11,14 @@
       background-color: #f9f9f9;
       margin: 20px;
     }
+
     .container {
       display: flex;
-      justify-content: center;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
+
     .table {
       display: grid;
       grid-template-columns: repeat(17, 85px);
@@ -24,92 +26,127 @@
       gap: 5px;
       margin-bottom: 20px;
     }
+
     .flip-card {
       width: 85px;
       height: 85px;
       perspective: 1000px;
-      position: relative;
-      z-index: 1;
-      transition: transform .2s, box-shadow .2s, border .2s;
       border: 2px solid transparent;
-      box-sizing: border-box;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
     }
+
     .flip-card:hover {
       z-index: 999;
       transform: scale(1.05);
       box-shadow: 0 0 12px rgba(0,0,0,0.5);
-      border-color: #FFA500;
+      border-color: black;
     }
+
+    .flip-card.selected {
+      z-index: 999;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      border-color: black;
+    }
+
     .flip-card-inner {
-      width:100%;
-      height:100%;
-      position:relative;
-      text-align:center;
-      transition:transform .6s;
-      transform-style:preserve-3d;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
     }
+
     .flip-card:hover .flip-card-inner {
       transform: rotateY(180deg);
     }
+
     .flip-card-front,
     .flip-card-back {
-      position:absolute;
-      width:100%;
-      height:100%;
-      backface-visibility:hidden;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      font-weight:bold;
-      color:white;
-      border:1px solid #ccc;
-      box-sizing:border-box;
-      padding:4px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      font-weight: bold;
+      color: white;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
     }
-    .flip-card-front { font-size:12px; }
-    .flip-card-back  { transform:rotateY(180deg); font-size:10px; }
+
+    .flip-card-front {
+      font-size: 12px;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      font-size: 10px;
+    }
+
+    .top-left-number {
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      font-size: 8px;
+    }
+
+    .symbol {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .name {
+      font-size: 10px;
+    }
 
     .percentages {
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      margin-top:20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
     }
+
     .category {
-      padding:8px 12px;
-      color:white;
-      border-radius:4px;
-      font-size:14px;
+      padding: 8px 12px;
+      color: white;
+      border-radius: 4px;
+      font-size: 14px;
     }
 
     .info-card {
       background: linear-gradient(135deg,#fff 0%,#e9e9e9 100%);
       border: 2px solid #bbb;
-      border-radius:8px;
-      color:#333;
-      padding:15px 20px;
-      font-size:16px;
-      text-align:left;
-      box-shadow:0 2px 6px rgba(0,0,0,0.15);
-      overflow-y:auto;
-      min-height:120px;
-      margin-top:50px;
-      width:700px;
-      display:grid;
-      grid-template-columns:auto 1fr;
-      grid-template-rows:repeat(3,auto);
-      gap:8px 16px;
+      border-radius: 8px;
+      color: #333;
+      padding: 15px 20px;
+      font-size: 16px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      overflow-y: auto;
+      min-height: 120px;
+      margin-top: 50px;
+      width: 700px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: repeat(3, auto);
+      gap: 8px 16px;
     }
+
     .info-card .label {
-      font-weight:bold;
-      text-decoration:underline;
-      font-size:18px;
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 18px;
     }
+
     .info-card.highlight {
-      background:#fefbd8;
-      border-color:#f1c40f;
-      box-shadow:0 2px 8px rgba(241,196,15,0.5);
+      background: #fefbd8;
+      border-color: #f1c40f;
+      box-shadow: 0 2px 8px rgba(241,196,15,0.5);
     }
   </style>
 </head>
@@ -129,7 +166,7 @@
     </div>
 
     <div class="info-card" id="info-box">
-      <div style="grid-column: span 2">Hover over a card to see details here.</div>
+      <div style="grid-column: span 2">Hover or click a card to see details here.</div>
       <div></div><div></div><div></div><div></div><div></div>
     </div>
   </div>
@@ -184,15 +221,42 @@
       return 1;
     }
 
+    const table   = document.getElementById("health-table");
+    const infoBox = document.getElementById("info-box");
+    let lockedElement = null;
+
+    function populateInfo(el) {
+      infoBox.innerHTML = "";
+      [
+        ["Name", el.name],
+        ["Category", el.category],
+        ["Example", el.example1]
+      ].forEach(([label,value])=>{
+        const lbl = document.createElement("div");
+        lbl.className = "label";
+        lbl.textContent = label;
+        const val = document.createElement("div");
+        val.textContent = value;
+        infoBox.appendChild(lbl);
+        infoBox.appendChild(val);
+      });
+      infoBox.classList.add("highlight");
+    }
+
+    function resetInfo() {
+      infoBox.innerHTML = `
+        <div style="grid-column: span 2">Hover or click a card to see details here.</div>
+        <div></div><div></div><div></div><div></div><div></div>
+      `;
+      infoBox.classList.remove("highlight");
+    }
+
     fetch('./elements_data_min.json')
       .then(res=>{
         if(!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
       .then(elements=>{
-        const table   = document.getElementById("health-table");
-        const infoBox = document.getElementById("info-box");
-
         elements.forEach(el=>{
           if(!el.symbol) return;
           const key  = normCat(el.category);
@@ -203,10 +267,10 @@
           card.style.gridRow    = getRow(el.number);
           card.innerHTML = `
             <div class="flip-card-inner">
-              <div class="flip-card-front" style="background-color:${clr}">
-                <div style="font-size:16px">${el.symbol}</div>
-                <div style="font-size:10px">${el.name}</div>
-                #${el.number}
+              <div class="flip-card-front" style="background-color:${clr};">
+                <div class="top-left-number">#${el.number}</div>
+                <div class="symbol">${el.symbol}</div>
+                <div class="name">${el.name}</div>
               </div>
               <div class="flip-card-back" style="background-color:${clr}">
                 ${el.name}<br>#${el.number}
@@ -214,31 +278,33 @@
             </div>
           `;
           card.addEventListener("mouseenter", ()=>{
-            infoBox.innerHTML = "";
-            [
-              ["Name", el.name],
-              ["Category", el.category],
-              ["Example", el.example1]
-            ].forEach(([label,value])=>{
-              const lbl = document.createElement("div");
-              lbl.className = "label";
-              lbl.textContent = label;
-              const val = document.createElement("div");
-              val.textContent = value;
-              infoBox.appendChild(lbl);
-              infoBox.appendChild(val);
-            });
-            infoBox.classList.add("highlight");
+            if (!lockedElement) populateInfo(el);
           });
           card.addEventListener("mouseleave", ()=>{
-            infoBox.innerHTML = `
-              <div style="grid-column: span 2">Hover over a card to see details here.</div>
-              <div></div><div></div><div></div><div></div>
-              <div></div><div></div><div></div><div></div><div></div>
-            `;
-            infoBox.classList.remove("highlight");
+            if (!lockedElement) resetInfo();
+          });
+          card.addEventListener("click", e => {
+            const selected = document.querySelector('.flip-card.selected');
+            if (lockedElement && lockedElement.number === el.number) {
+              lockedElement = null;
+              card.classList.remove("selected");
+              resetInfo();
+            } else {
+              if (selected) selected.classList.remove("selected");
+              lockedElement = el;
+              card.classList.add("selected");
+              populateInfo(el);
+            }
+            e.stopPropagation();
           });
           table.appendChild(card);
+        });
+
+        document.addEventListener("click", () => {
+          const selected = document.querySelector('.flip-card.selected');
+          if (selected) selected.classList.remove("selected");
+          lockedElement = null;
+          resetInfo();
         });
       })
       .catch(err=>{
