@@ -70,9 +70,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* vertical center */
-  align-items: center;      /* horizontal center */
-  padding: 4px;             /* minimal padding to prevent cutoffs */
+  justify-content: center;  
+  align-items: center;      
+  padding: 4px;            
   font-weight: bold;
   color: white;
   border: 1px solid #ccc;
@@ -105,15 +105,16 @@
     }
 
     .name {
-      font-size: 10px;
-      text-align: center;
-      padding: 0 2px;
-      word-break: break-word;
-      line-height: 1.1;
-      max-height: none;
-      overflow: hidden;
-      max-width: 90%;
-    }
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 2px;
+  word-break: normal; 
+  white-space: normal;
+  max-height: none;
+  hyphens: auto;
+}
+
 
     .percentages {
       display: flex;
