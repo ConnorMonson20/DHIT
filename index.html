@@ -94,8 +94,17 @@
       position: absolute;
       top: 2px;
       left: 4px;
-      font-size: 8px;
+      font-size: 12px;
     }
+    .name {
+      font-size: 10px;
+      text-align: center;
+      padding: 0 2px;
+      word-break: break-word;
+      line-height: 1.1;
+      max-height: 28px;
+      overflow: hidden;
+}
 
     .symbol {
       font-size: 16px;
@@ -151,18 +160,19 @@
       box-shadow: 0 2px 8px rgba(241,196,15,0.5);
     }
 
-    .footer-logo {
-      margin-top: 40px;
-    }
-
-    .footer-logo img {
-      height: 80px;
-    }
+.logo-below-title img {
+  height: 120px;
+  max-width: 100%;
+  object-fit: contain;
+}
   </style>
 </head>
 <body>
 
   <h1>Periodic Table of Health Elements</h1>
+  <div class="logo-below-title">
+    <img src="DHIT_logo.png" alt="Company Logo">
+  </div>
   <div class="container">
 
     <div class="table" id="health-table"></div>
@@ -176,14 +186,11 @@
     </div>
 
     <div class="info-card" id="info-box">
-      <div style="grid-column: span 2">Hover or click a card to see details here.</div>
+      <div style="grid-column: span 2">Hover over or click a card to see details here.</div>
       <div></div><div></div><div></div><div></div><div></div>
     </div>
 
     <!-- FOOTER LOGO -->
-    <div class="footer-logo">
-      <img src="DHIT_logo.png" alt="Company Logo">
-    </div>
 
   </div>
 
