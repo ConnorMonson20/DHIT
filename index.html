@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<img src = "DHIT_logo.png"></img>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -12,9 +11,15 @@
       text-align: center;
       background-color: #f9f9f9;
       margin: 20px;
-      transform: scale(0.8);
+      transform: scale(0.65);
       transform-origin: top center;
     }
+    .logo {
+  width: 200px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
 
     .container {
       display: flex;
@@ -25,15 +30,15 @@
 
     .table {
       display: grid;
-      grid-template-columns: repeat(17, 95px);
-      grid-template-rows: repeat(7, 95px);
+      grid-template-columns: repeat(17, 115px);
+      grid-template-rows: repeat(7, 115px);
       gap: 5px;
       margin-bottom: 20px;
     }
 
     .flip-card {
-      width: 95px;
-      height: 95px;
+      width: 115px;
+      height: 115px;
       perspective: 1000px;
       border: 2px solid transparent;
       position: relative;
@@ -84,7 +89,7 @@
     }
 
     .flip-card-front { font-size: 12px; }
-    .flip-card-back  { font-size: 10px; transform: rotateY(180deg); }
+    .flip-card-back  { font-size: 12px; transform: rotateY(180deg); }
 
     .top-left-number {
       position: absolute;
@@ -94,10 +99,16 @@
       font-weight: bold;
     }
 
-    .symbol { font-size: 16px; margin-bottom: 4px; }
+    .symbol {
+  font-size: 28px; 
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
 
     .name {
-      font-size: 10px;
+      display: none;
+      font-size: 13px;
       text-align: center;
       line-height: 1.2;
       padding: 0 2px;
@@ -110,7 +121,7 @@
     .info-card {
       width: 1600px;
       min-height: 160px;
-      margin-top: 40px;
+      margin-top: 10px;
       padding: 30px 0;
       background-color: #ffffff;
       border: 4px solid #ddd;
@@ -168,7 +179,7 @@
   font-weight: 600;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  color: #a2acbd; /* softer gray from design */
+  color: #a2acbd; 
   margin-bottom: 4px;
 }
 
@@ -178,14 +189,42 @@
   color: #505871 !important;
   white-space: pre-wrap;
 }
+.percentages {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  flex-direction: row;
+}
+
+.percentages .category {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  white-space: nowrap;
+}
+
+
 
   </style>
 </head>
 <body>
+  <img src="DHIT_logo.png" alt="DHIT Logo" class="logo" />
+
   <h1>Periodic Table of Health Elements&trade;</h1>
 
   <div class="container">
     <div class="table" id="health-table"></div>
+    <div class="percentages">
+      <div class="category" style="background-color: #4A90E2">Medical Care 11%</div>
+      <div class="category" style="background-color: #7ED321">Environment 7%</div>
+      <div class="category" style="background-color: #F5A623">Individual Behavior 38%</div>
+      <div class="category" style="background-color: #9013FE">Genetics & Biology 22%</div>
+      <div class="category" style="background-color: #D0021B">Socio-economic 24%</div>
+    </div>
 
     <div class="info-card" id="info-box">
       <div class="info-left">
@@ -244,7 +283,7 @@ const rowsMap = {
       for(let r=1;r<=7;r++){ if(rowsMap[r].includes(n)) return r; }
       return 1;
     }
-
+    
     const categoryColors = {
       medical: "#44a2e6",
       environment: "#7cc25d",
@@ -307,11 +346,9 @@ const rowsMap = {
   nameBox.style.borderRadius = '6px';
   nameBox.style.color = '#505871';
 
-  // Set example label and text
   document.getElementById('info-example-label').textContent = 'Example';
   document.getElementById('info-example').textContent = el.example1;
 
-  // Set background and border color of the info box
   infoBox.style.backgroundColor = clr;
   infoBox.style.borderColor = clr;
 }
@@ -350,16 +387,16 @@ resetInfo();
           card.style.gridRow = getRow(el.number);
 
           card.innerHTML = `
-            <div class="flip-card-inner">
-              <div class="flip-card-front" style="background-color:${clr};">
-                <div class="top-left-number">#${el.number}</div>
-                <div class="symbol">${el.symbol}</div>
-                <div class="name">${el.name}</div>
-              </div>
-              <div class="flip-card-back" style="background-color:${clr};">
-                ${el.name}<br>#${el.number}
-              </div>
-            </div>`;
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-color:${clr};">
+      <div class="top-left-number">#${el.number}</div>
+      <div class="symbol">${el.symbol}</div>
+    </div>
+    <div class="flip-card-back" style="background-color:${clr};">
+      ${el.name}<br>#${el.number}
+    </div>
+  </div>`;
+
 
           card.addEventListener('mouseenter', () => {
             if (!lockedElement) populateInfo(el);
