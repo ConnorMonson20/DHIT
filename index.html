@@ -3,23 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+.category-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+
+.dropdown-content {
+  display: none;
+  background-color: #ffffff;
+  color: #333;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  margin-top: 8px;
+  width: 100%; /* fills wrapper */
+  text-align: left;
+}
+
+.category-wrapper:hover .dropdown-content {
+  display: block;
+}
+.percent-description {
+  max-width: 2100px;
+  text-align: left;
+  margin: 40px auto 0 auto;
+  font-size: 24px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #333;
+  padding: 0 40px;
+}
+
     body {
       font-family: 'Inter', Arial, sans-serif; 
       text-align: center;
       background-color: #f9f9f9;
       margin: 20px;
-      transform: scale(0.65);
+      transform: scale(0.5);
       transform-origin: top center;
     }
-    .logo {
-  width: 200px; 
-  height: auto;
-  margin-bottom: 20px;
-}
 
+    h1 {
+      font-size: 64px;
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      font-size: 32px;
+      color: #505871;
+      margin-bottom: 30px;
+      padding: 0 60px;
+    }
 
     .container {
       display: flex;
@@ -91,31 +133,10 @@
     .flip-card-front { font-size: 12px; }
     .flip-card-back  { font-size: 12px; transform: rotateY(180deg); }
 
-    .top-left-number {
-      position: absolute;
-      top: 2px;
-      left: 4px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-
     .symbol {
-  font-size: 28px; 
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-
-    .name {
-      display: none;
-      font-size: 13px;
-      text-align: center;
-      line-height: 1.2;
-      padding: 0 2px;
-      word-break: normal;
-      white-space: normal;
-      max-height: none;
-      hyphens: auto;
+      font-size: 40px; 
+      font-weight: bold;
+      margin-bottom: 4px;
     }
 
     .info-card {
@@ -165,66 +186,86 @@
     }
 
     .info-name {
-      font-size: 22px;
-      font-weight: 700;
-      color: white !important;
-      padding: 8px 16px;
-      border-radius: 6px;
-      background-color: rgba(255,255,255,0.2);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    }
+  font-size: 22px;
+  font-weight: 700;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+  align-self: center;
+}
+
 
     .info-example-label {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  color: #a2acbd; 
-  margin-bottom: 4px;
-}
-
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #a2acbd; 
+      margin-bottom: 4px;
+    }
 
     .info-example {
-  font-size: 22px;
-  color: #505871 !important;
-  white-space: pre-wrap;
+      font-size: 22px;
+      color: #505871 !important;
+      white-space: pre-wrap;
+    }
+
+
+    .percentages .category {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      color: white;
+      white-space: nowrap;
+    }
+    .percentages-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
 .percentages {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
-  flex-wrap: nowrap;
-  margin-top: 10px;
-  flex-direction: row;
+  margin-top: 30px;
 }
 
-.percentages .category {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 8px;
-  color: white;
-  white-space: nowrap;
+#dropdown-container {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 1200px;
+  transition: all 0.3s ease;
 }
+
+.dropdown-box {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: left;
+  max-width: 1200px;
+}
+
 
 
 
   </style>
 </head>
 <body>
-  <img src="DHIT_logo.png" alt="DHIT Logo" class="logo" />
-
   <h1>Periodic Table of Health Elements&trade;</h1>
-
+  <div class="subtext">Your Innovation GPS for Health Transformation
+  </div>
   <div class="container">
     <div class="table" id="health-table"></div>
-    <div class="percentages">
-      <div class="category" style="background-color: #4A90E2">Medical Care 11%</div>
-      <div class="category" style="background-color: #7ED321">Environment 7%</div>
-      <div class="category" style="background-color: #F5A623">Individual Behavior 38%</div>
-      <div class="category" style="background-color: #9013FE">Genetics & Biology 22%</div>
-      <div class="category" style="background-color: #D0021B">Socio-economic 24%</div>
-    </div>
 
     <div class="info-card" id="info-box">
       <div class="info-left">
@@ -237,10 +278,27 @@
         <div id="info-example" class="info-example"></div>
       </div>
     </div>
+
+    <div class="percentages-wrapper">
+      <div class="percentages">
+        <div class="category" style="background-color: #4A90E2" data-category="medical">Medical Care 11%</div>
+        <div class="category" style="background-color: #7ED321" data-category="environment">Environment 7%</div>
+        <div class="category" style="background-color: #F5A623" data-category="individual">Individual Behavior 36%</div>
+        <div class="category" style="background-color: #9013FE" data-category="genetics">Genetics & Biology 22%</div>
+        <div class="category" style="background-color: #D0021B" data-category="socio">Socio-economic 24%</div>
+      </div>
+      <div id="dropdown-container"></div>
+    </div>
+    
+
+    <div class="percent-description">
+      <em>Hover over each percentage to learn more about its impact.</em><br><br>
+      The Table is organized into five individual, yet fluid categories: Medical Care, Environment, Individual Behavior, Genetics and Biology, and Socio-economic Circumstances. Based on current public health research and consensus, each is ranked by its estimated percentage influence on overall health. These rankings are supported by a synthesis of epidemiological studies, population health data, and reports from institutions such as the CDC, WHO, and NIH, which analyze the relative impact of social, behavioral, environmental, genetic, and healthcare factors on health outcomes and life expectancy.
+    </div>
   </div>
 
   <script>
-   const colsMap = {
+    const colsMap = {
   1: [1,2,3,4,5,6],
   2: [7,8,9,10,11,12],
   3: [13,14,15,16,17,18],
@@ -389,13 +447,13 @@ resetInfo();
           card.innerHTML = `
   <div class="flip-card-inner">
     <div class="flip-card-front" style="background-color:${clr};">
-      <div class="top-left-number">#${el.number}</div>
       <div class="symbol">${el.symbol}</div>
     </div>
     <div class="flip-card-back" style="background-color:${clr};">
-      ${el.name}<br>#${el.number}
+      ${el.name}
     </div>
   </div>`;
+
 
 
           card.addEventListener('mouseenter', () => {
@@ -434,6 +492,37 @@ resetInfo();
         console.error(err);
         alert('Failed to load element data.');
       });
-  </script>
+      const dropdownContainer = document.getElementById('dropdown-container');
+  const categoryButtons = document.querySelectorAll('.category');
+
+  categoryButtons.forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      const key = btn.getAttribute('data-category');
+      dropdownContainer.innerHTML = `
+        <div class="dropdown-box">
+          ${descriptions[key]}
+        </div>
+      `;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+      dropdownContainer.innerHTML = '';
+    });
+  });
+</script>
+
+  <script>
+    const descriptions = {
+      medical: `Defined as the services and interventions by healthcare professionals to maintain, restore, or improve a person's health and well-being. However, medical care constitutes only a small percentage of the impact on an individual’s health. More impactful is the effect of access, or lack thereof, to health services and an overall decline in an understanding of one’s own health and the concomitant factors that influence health.`,
+      
+      environment: `Defined as the natural and man-made places we live and work, encompassing both the structural and natural elements of life. Environment, despite having the lowest impact on health, still remains important. From pollution to lack of accessibility, the environment can have deleterious impacts on health.`,
+      
+      individual: `Defined as the totality of an individual’s actions in response to internal and external stimuli, it is by far the most impactful determinant for our physical and mental health and overall well-being. Adopting healthier behaviors can lower the risk of developing various diseases, and many public health initiatives have already targeted the reduction of harmful habits.`,
+      
+      genetics: `Biological factors like genetics and aging influence health but account for only a portion of overall outcomes. While genome sequencing may improve future health predictions, its widespread use remains impractical. Variations in genetic and biological influences must be considered when assessing health determinants.`,
+      
+      socio: `Socio-economic circumstances are defined as the societal conditions in which individuals grow and develop. Factors such as social status, early childhood experiences, and cultural upbringing influence both social development and overall health. Adverse conditions, including discrimination, poverty, and limited education, are often linked to poorer health outcomes and a lower quality of life.`
+    };
+    </script>
 </body>
 </html>
