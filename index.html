@@ -47,7 +47,7 @@
       text-align: center;
       background-color: #f9f9f9;
       margin: 20px;
-      zoom: 50%;
+      zoom: 40%;
       transform-origin: top center;
     }
 
@@ -202,14 +202,16 @@
     .info-name {
   font-size: 22px;
   font-weight: 700;
-  color: white !important;
+  color: #505871; /* default color (for placeholder) */
   padding: 8px 16px;
   border-radius: 6px;
-  background-color: rgba(255,255,255,0.2);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  background-color: transparent;
+  box-shadow: none;
   text-align: center;
   align-self: flex-end;
+  transition: all 0.3s ease;
 }
+
 
 
     .info-example-label {
@@ -296,7 +298,10 @@
         <div id="info-example" class="info-example"></div>
       </div>
     </div>
-
+    <div class="percent-description">
+      <em>Hover over each category to learn more about its impact.</em><br><br>
+      The Table is organized into five individual, yet fluid categories: Medical Care, Environment, Individual Behavior, Genetics and Biology, and Socio-economic Circumstances. Based on current public health research and consensus, each is ranked by its estimated percentage influence on overall health. These rankings are supported by a synthesis of epidemiological studies, population health data, and reports from institutions such as the CDC, WHO, and NIH, which analyze the relative impact of social, behavioral, environmental, genetic, and healthcare factors on health outcomes and life expectancy.
+    </div>
     <div class="percentages-wrapper">
       <div class="percentages">
         <div class="category" style="background-color: #4A90E2" data-category="medical">Medical Care 11%</div>
@@ -309,10 +314,7 @@
     </div>
     
 
-    <div class="percent-description">
-      <em>Hover over each category to learn more about its impact.</em><br><br>
-      The Table is organized into five individual, yet fluid categories: Medical Care, Environment, Individual Behavior, Genetics and Biology, and Socio-economic Circumstances. Based on current public health research and consensus, each is ranked by its estimated percentage influence on overall health. These rankings are supported by a synthesis of epidemiological studies, population health data, and reports from institutions such as the CDC, WHO, and NIH, which analyze the relative impact of social, behavioral, environmental, genetic, and healthcare factors on health outcomes and life expectancy.
-    </div>
+  
   </div>
 
   <script>
@@ -404,9 +406,10 @@ const rowsMap = {
     let lockedElement = null;
 
     function populateInfo(el) {
-  const key = normCat(el.category);
-  const clrBox = categoryColors[key]
-  const clr = hoverColors[key];
+      nameBox.style.color = 'white';
+      const key = normCat(el.category);
+      const clrBox = categoryColors[key]
+      const clr = hoverColors[key];
 
   // Set category text
   document.getElementById('info-category').textContent = el.category.toUpperCase();
@@ -430,7 +433,7 @@ const rowsMap = {
 }
 
 
-    function resetInfo() {
+function resetInfo() {
   document.getElementById('info-category').textContent = '';
 
   const nameBox = document.getElementById('info-name');
@@ -446,6 +449,7 @@ const rowsMap = {
   infoBox.style.backgroundColor = '#ffffff';
   infoBox.style.borderColor = '#ddd';
 }
+
 resetInfo();
 
 
