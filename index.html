@@ -279,11 +279,6 @@
 <body>
   <h1>Periodic Table of Health Elements&trade;</h1>
   <div class="subtext">Your Innovation GPS for Health Transformation<br></div>
-  <div class="subtext2">Just like the periodic table in science organizes the building blocks of matter, DHIT’s Periodic Table of Health Elements organizes the building blocks of health innovation.
-
-    It’s designed to help communities, health systems, and innovators quickly identify their current state, discover what’s missing, and design the next steps.
-    
-    Each “element” represents a critical factor for digital health transformation, from trust and access to infrastructure and insights. The table makes complex systems simple, helping to align, prioritize, and act.</div>
   <div class="container">
     <div class="table" id="health-table"></div>
 
@@ -406,7 +401,6 @@ const rowsMap = {
     let lockedElement = null;
 
     function populateInfo(el) {
-      nameBox.style.color = 'white';
       const key = normCat(el.category);
       const clrBox = categoryColors[key]
       const clr = hoverColors[key];
