@@ -4,622 +4,711 @@
     "symbol": "He",
     "name": "Healthcare Access",
     "category": "Medical Care",
-    "example1": "A rural patient can\u2019t find a nearby doctor"
+    "example1": "A rural patient can\u2019t find a nearby doctor.",
+    "description": "Getting health services when you need them, without big delays or high costs."
   },
   {
     "number": 2,
     "symbol": "Qo",
     "name": "Quality of Healthcare",
     "category": "Medical Care",
-    "example1": "A hospital has many readmissions for infections"
+    "example1": "A hospital has many readmissions for infections.",
+    "description": "How well doctors and hospitals help people get better using up-to-date care."
   },
   {
     "number": 3,
     "symbol": "Pt",
     "name": "Patient Engagement",
     "category": "Medical Care",
-    "example1": "A patient tracks blood sugar daily"
+    "example1": "A patient tracks blood sugar daily.",
+    "description": "People taking part in their own health care choices and follow-ups."
   },
   {
     "number": 4,
     "symbol": "Hi",
     "name": "Health Insurance Coverage",
     "category": "Medical Care",
-    "example1": "A worker gets coverage through their job"
+    "example1": "A worker gets coverage through their job.",
+    "description": "Having a health plan that helps cover medical costs and services."
   },
   {
     "number": 5,
     "symbol": "Pd",
     "name": "Preventive Care Utilization",
     "category": "Medical Care",
-    "example1": "A teen gets the HPV vaccine"
+    "example1": "A teen gets the HPV vaccine.",
+    "description": "Going to regular check-ups and screenings to catch problems early."
   },
   {
     "number": 6,
     "symbol": "Mf",
     "name": "Medication Affordability",
     "category": "Medical Care",
-    "example1": "A person skips doses to save money"
+    "example1": "A person skips doses to save money.",
+    "description": "Being able to pay for the medicines you need to stay healthy."
   },
   {
     "number": 7,
     "symbol": "Te",
     "name": "Telehealth Access",
     "category": "Medical Care",
-    "example1": "A doctor visit done by video call"
+    "example1": "A doctor visit done by video call.",
+    "description": "Being able to talk to doctors through phone or video calls."
   },
   {
     "number": 8,
     "symbol": "Hp",
     "name": "Healthcare Provider Availability",
     "category": "Medical Care",
-    "example1": "No doctors accepting new patients nearby"
+    "example1": "No doctors accepting new patients nearby.",
+    "description": "Enough doctors, nurses, and specialists nearby to meet needs."
   },
   {
     "number": 9,
     "symbol": "Mh",
     "name": "Maternal & Infant Health",
     "category": "Medical Care",
-    "example1": "A baby born with low weight"
+    "example1": "A baby born with low weight.",
+    "description": "Health care and outcomes for moms and babies before and after birth."
   },
   {
     "number": 10,
     "symbol": "Di",
     "name": "Digital Literacy & Health Tech Use",
     "category": "Medical Care",
-    "example1": "A patient logs into a health portal"
+    "example1": "A patient logs into a health portal.",
+    "description": "Knowing how to use digital tools to find and manage health info."
   },
   {
     "number": 11,
     "symbol": "Cu",
     "name": "Cultural Competence in Healthcare",
     "category": "Medical Care",
-    "example1": "A clinic uses translators for patients"
+    "example1": "A clinic uses translators for patients.",
+    "description": "Health services that respect and understand different beliefs and values."
   },
   {
     "number": 12,
     "symbol": "Ae",
     "name": "Aging & Elderly Care Access",
     "category": "Medical Care",
-    "example1": "An older person gets home visits"
+    "example1": "An older person gets home visits.",
+    "description": "Support and services for older adults to stay healthy and independent."
   },
   {
     "number": 13,
     "symbol": "Ai",
     "name": "AI & Digital Health Impact",
     "category": "Medical Care",
-    "example1": "An app reminds you to take meds"
+    "example1": "An app reminds you to take meds.",
+    "description": "Using technology to improve health care and access."
   },
   {
     "number": 14,
     "symbol": "Dd",
     "name": "Data Privacy & Security in Health",
     "category": "Medical Care",
-    "example1": "A breach leaks patient records"
+    "example1": "A breach leaks patient records.",
+    "description": "Keeping your health information safe and shared only with consent."
   },
   {
     "number": 15,
     "symbol": "Ca",
     "name": "Caregiver Availability",
     "category": "Medical Care",
-    "example1": "An elder relies on a family caregiver"
+    "example1": "An elder relies on a family caregiver.",
+    "description": "Having someone to help care for you when needed."
   },
   {
     "number": 16,
     "symbol": "Lh",
     "name": "Literacy & Health Communication",
     "category": "Medical Care",
-    "example1": "Someone misunderstands a prescription"
+    "example1": "Someone misunderstands a prescription.",
+    "description": "Understanding and using health information to make decisions."
   },
   {
     "number": 17,
     "symbol": "Da",
     "name": "Disability Access & Accommodations",
     "category": "Medical Care",
-    "example1": "A clinic lacks wheelchair ramps"
+    "example1": "A clinic lacks wheelchair ramps.",
+    "description": "Making sure spaces and services meet the needs of all abilities."
   },
   {
     "number": 18,
     "symbol": "Ht",
     "name": "Healthcare Trust & Misinformation",
     "category": "Medical Care",
-    "example1": "False info spreads online"
+    "example1": "False info spreads online.",
+    "description": "Believing in health systems and knowing what\u2019s true."
   },
   {
     "number": 19,
     "symbol": "Po",
     "name": "Pollution",
     "category": "Environment",
-    "example1": "A factory pollutes the air nearby"
+    "example1": "A factory pollutes the air nearby.",
+    "description": "Harmful substances in air, water, or land that can cause illness."
   },
   {
     "number": 20,
     "symbol": "Lo",
     "name": "Location",
     "category": "Environment",
-    "example1": "A city has lots of green space"
+    "example1": "A city has lots of green space.",
+    "description": "Where you live affects your health, like access to parks or hospitals."
   },
   {
     "number": 21,
     "symbol": "Ex",
     "name": "Exposure to Firearms",
     "category": "Environment",
-    "example1": "Unlocked guns in the home"
+    "example1": "Unlocked guns in the home.",
+    "description": "Being around guns raises risk of injury or death from accidents or violence."
   },
   {
     "number": 22,
     "symbol": "Al",
     "name": "Allergens",
     "category": "Environment",
-    "example1": "Spring pollen spikes cause sneezing"
+    "example1": "Spring pollen spikes cause sneezing.",
+    "description": "Substances like pollen, dust, or pet dander that can trigger reactions."
   },
   {
     "number": 23,
     "symbol": "Cl",
     "name": "Climate Change",
     "category": "Environment",
-    "example1": "Heat waves cause dehydration"
+    "example1": "Heat waves cause dehydration.",
+    "description": "Changes in weather and temperature that affect health and safety."
   },
   {
     "number": 24,
     "symbol": "Wa",
     "name": "Water Quality",
     "category": "Environment",
-    "example1": "A city\u2019s water has lead pipes"
+    "example1": "A city\u2019s water has lead pipes.",
+    "description": "Having clean, safe water to drink, cook, and bathe in."
   },
   {
     "number": 25,
     "symbol": "Hs",
     "name": "Housing Stability",
     "category": "Environment",
-    "example1": "A family is evicted due to rising rent"
+    "example1": "A family is evicted due to rising rent.",
+    "description": "Having a safe, steady place to live without fear of eviction or harm."
   },
   {
     "number": 26,
     "symbol": "Vt",
     "name": "Vocational Training",
     "category": "Environment",
-    "example1": "A teen joins a welding class"
+    "example1": "A teen joins a welding class.",
+    "description": "Learning job skills helps people earn better pay and stay healthy."
   },
   {
     "number": 27,
     "symbol": "Jo",
     "name": "Job Opportunities",
     "category": "Environment",
-    "example1": "A town adds a new factory"
+    "example1": "A town adds a new factory.",
+    "description": "Having good jobs nearby helps reduce stress and improve health."
   },
   {
     "number": 28,
     "symbol": "Wi",
     "name": "Walkability",
     "category": "Environment",
-    "example1": "Sidewalks connect parks and shops"
+    "example1": "Sidewalks connect parks and shops.",
+    "description": "How easy it is to walk around your area safely."
   },
   {
     "number": 29,
     "symbol": "Lb",
     "name": "Lead & Heavy Metal Exposure",
     "category": "Environment",
-    "example1": "A child drinks tap water with high lead levels"
+    "example1": "A child drinks tap water with high lead levels.",
+    "description": "Contact with harmful metals like lead can affect brain development, especially in children."
   },
   {
     "number": 30,
     "symbol": "Ep",
     "name": "Epidemic & Pandemic Impact",
     "category": "Environment",
-    "example1": "A store clerk loses income during a flu outbreak"
+    "example1": "A store clerk loses income during a flu outbreak.",
+    "description": "Large disease outbreaks can disrupt lives, health systems, and economies."
   },
   {
     "number": 31,
     "symbol": "Rt",
     "name": "Rural vs. Urban Disparities",
     "category": "Environment",
-    "example1": "A farmer drives hours for a specialist visit"
+    "example1": "A farmer drives hours for a specialist visit.",
+    "description": "Where you live can affect your access to healthcare, food, and transportation."
   },
   {
     "number": 32,
     "symbol": "Dl",
     "name": "Disaster & Emergency Preparedness",
     "category": "Environment",
-    "example1": "A family lacks supplies during a winter blackout"
+    "example1": "A family lacks supplies during a winter blackout.",
+    "description": "Being ready for natural or manmade disasters helps protect health and safety."
   },
   {
     "number": 33,
     "symbol": "Aq",
     "name": "Air Quality & Industrial Exposure",
     "category": "Environment",
-    "example1": "A boy coughs from fumes near a highway"
+    "example1": "A boy coughs from fumes near a highway.",
+    "description": "Breathing polluted air from traffic or factories increases asthma and heart risks."
   },
   {
     "number": 34,
     "symbol": "Tr",
     "name": "Transportation Safety & Injuries",
     "category": "Environment",
-    "example1": "A cyclist is injured on a road without shoulders"
+    "example1": "A cyclist is injured on a road without shoulders.",
+    "description": "Crashes, unsafe roads, and lack of bike lanes increase injury and death risk."
   },
   {
     "number": 35,
     "symbol": "Cr",
     "name": "Crime & Community Safety",
     "category": "Environment",
-    "example1": "A shooting closes the local park for weeks"
+    "example1": "A shooting closes the local park for weeks.",
+    "description": "Violence and crime can cause stress, limit movement, and reduce well-being."
   },
   {
     "number": 36,
     "symbol": "Hb",
     "name": "Home & Built Environment",
     "category": "Environment",
-    "example1": "A cracked stairwell causes a tenant\u2019s fall"
+    "example1": "A cracked stairwell causes a tenant\u2019s fall.",
+    "description": "Your housing and neighborhood layout can affect your health daily."
   },
   {
     "number": 37,
     "symbol": "Mo",
     "name": "Mobility & Transportation Barriers",
     "category": "Environment",
-    "example1": "A worker misses appointments due to late buses"
+    "example1": "A worker misses appointments due to late buses.",
+    "description": "Lack of reliable transport makes it harder to access jobs, care, or healthy food."
   },
   {
     "number": 38,
     "symbol": "En",
     "name": "Environmental Justice & Policies",
     "category": "Environment",
-    "example1": "Residents fight a factory near their school"
+    "example1": "Residents fight a factory near their school.",
+    "description": "Fair treatment in environmental decisions helps protect all communities, especially vulnerable ones."
   },
   {
     "number": 39,
     "symbol": "Cl",
     "name": "Conscientiousness Level",
     "category": "Individual Behavior",
-    "example1": "A student packs healthy lunches each night"
+    "example1": "A student packs healthy lunches each night.",
+    "description": "Being organized, responsible, and self-disciplined often leads to better health and life outcomes."
   },
   {
     "number": 40,
     "symbol": "Pa",
     "name": "Physical Activity",
     "category": "Individual Behavior",
-    "example1": "A teen plays soccer after school"
+    "example1": "A teen plays soccer after school.",
+    "description": "Any body movement that helps keep you healthy and strong."
   },
   {
     "number": 41,
     "symbol": "Sl",
     "name": "Sleep Patterns",
     "category": "Individual Behavior",
-    "example1": "A student sleeps 8 hours nightly"
+    "example1": "A student sleeps 8 hours nightly.",
+    "description": "Getting enough good sleep helps your body and brain stay well."
   },
   {
     "number": 42,
     "symbol": "Nm",
     "name": "Negative Mood & Affects",
     "category": "Individual Behavior",
-    "example1": "A parent loses sleep from constant job stress"
+    "example1": "A parent loses sleep from constant job stress.",
+    "description": "Chronic stress, sadness, or anger can impact physical health and daily functioning."
   },
   {
     "number": 43,
     "symbol": "Sf",
     "name": "Self-efficacy",
     "category": "Individual Behavior",
-    "example1": "A student studies harder after a bad grade"
+    "example1": "A student studies harder after a bad grade.",
+    "description": "Believing you can handle life and health challenges."
   },
   {
     "number": 44,
     "symbol": "Sm",
     "name": "Smoking/Tobacco Use",
     "category": "Individual Behavior",
-    "example1": "A teen tries vaping at school"
+    "example1": "A teen tries vaping at school.",
+    "description": "Using tobacco harms your lungs, heart, and more."
   },
   {
     "number": 45,
     "symbol": "Ac",
     "name": "Alcohol Consumption",
     "category": "Individual Behavior",
-    "example1": "A party has heavy drinking"
+    "example1": "A party has heavy drinking.",
+    "description": "Drinking too much harms your body and mind."
   },
   {
     "number": 46,
     "symbol": "Nv",
     "name": "Nutrition & Diet",
     "category": "Individual Behavior",
-    "example1": "A family eats lots of veggies"
+    "example1": "A family eats lots of veggies.",
+    "description": "Eating well supports energy, growth, and disease prevention."
   },
   {
     "number": 47,
     "symbol": "Ol",
     "name": "Optimism Level",
     "category": "Individual Behavior",
-    "example1": "A student stays upbeat despite a setback"
+    "example1": "A student stays upbeat despite a setback.",
+    "description": "How hopeful and positive someone feels about the future."
   },
   {
     "number": 48,
     "symbol": "Se",
     "name": "Sexual Health & Behavior",
     "category": "Individual Behavior",
-    "example1": "Teens learn about consent in school"
+    "example1": "Teens learn about consent in school.",
+    "description": "Making safe choices around sex and relationships."
   },
   {
     "number": 49,
     "symbol": "Hc",
     "name": "Healthcare-Seeking Behavior",
     "category": "Individual Behavior",
-    "example1": "A person waits too long to see a doctor"
+    "example1": "A person waits too long to see a doctor.",
+    "description": "Going to a doctor or clinic when something feels wrong."
   },
   {
     "number": 50,
     "symbol": "Dr",
     "name": "Substance Use & Addiction",
     "category": "Individual Behavior",
-    "example1": "A person uses opioids after surgery and can't stop"
+    "example1": "A person uses opioids after surgery and can't stop.",
+    "description": "Using drugs in ways that harm health or lead to dependence."
   },
   {
     "number": 51,
     "symbol": "Eh",
     "name": "Exercise Habits",
     "category": "Individual Behavior",
-    "example1": "A person joins a morning yoga group"
+    "example1": "A person joins a morning yoga group.",
+    "description": "How often you move your body to stay fit and healthy."
   },
   {
     "number": 52,
     "symbol": "Cf",
     "name": "Cognitive Function",
     "category": "Individual Behavior",
-    "example1": "A senior does puzzles daily"
+    "example1": "A senior does puzzles daily.",
+    "description": "How well your brain works to think, remember, and learn."
   },
   {
     "number": 53,
     "symbol": "Ls",
     "name": "Life Satisfaction Level",
     "category": "Individual Behavior",
-    "example1": "Someone feels proud of their routine"
+    "example1": "Someone feels proud of their routine.",
+    "description": "How happy and content someone feels with their life overall."
   },
   {
     "number": 54,
     "symbol": "Sw",
     "name": "Spiritual Well-being",
     "category": "Individual Behavior",
-    "example1": "A person prays or meditates daily"
+    "example1": "A person prays or meditates daily.",
+    "description": "Feeling connected to something bigger than yourself."
   },
   {
     "number": 55,
     "symbol": "Sn",
     "name": "Sensory System",
     "category": "Individual Behavior",
-    "example1": "A person wears hearing aids"
+    "example1": "A person wears hearing aids.",
+    "description": "How well you see, hear, smell, taste, and feel touch."
   },
   {
     "number": 56,
     "symbol": "Sv",
     "name": "Stress Levels",
     "category": "Individual Behavior",
-    "example1": "A worker feels overwhelmed at deadlines"
+    "example1": "A worker feels overwhelmed at deadlines.",
+    "description": "How much pressure or strain you feel in daily life."
   },
   {
     "number": 57,
     "symbol": "Po",
     "name": "Pet Ownership",
     "category": "Individual Behavior",
-    "example1": "An anxious person adopts a dog for emotional support"
+    "example1": "An anxious person adopts a dog for emotional support.",
+    "description": "Owning a pet to improve health or affect."
   },
   {
     "number": 58,
     "symbol": "Bs",
     "name": "Body Structure",
     "category": "Genetics & Biology",
-    "example1": "A child has scoliosis"
+    "example1": "A child has scoliosis.",
+    "description": "Your body\u2019s physical build and systems like bones and muscles."
   },
   {
     "number": 59,
     "symbol": "Ag",
     "name": "Aging Factors",
     "category": "Genetics & Biology",
-    "example1": "Skin wrinkles over time"
+    "example1": "Skin wrinkles over time.",
+    "description": "Changes in the body as you get older that affect health."
   },
   {
     "number": 60,
     "symbol": "Ch",
     "name": "Chronic Disease Susceptibility",
     "category": "Genetics & Biology",
-    "example1": "Heart disease runs in the family"
+    "example1": "Heart disease runs in the family.",
+    "description": "Your risk of long-term diseases like diabetes or heart problems."
   },
   {
     "number": 61,
     "symbol": "In",
     "name": "Immune System Health",
     "category": "Genetics & Biology",
-    "example1": "A vaccine helps prevent flu"
+    "example1": "A vaccine helps prevent flu.",
+    "description": "How well your body fights off infections and illness."
   },
   {
     "number": 62,
     "symbol": "Md",
     "name": "Metabolic Disorders",
     "category": "Genetics & Biology",
-    "example1": "Diabetes affects sugar control"
+    "example1": "Diabetes affects sugar control.",
+    "description": "Problems with how your body uses food and energy."
   },
   {
     "number": 63,
     "symbol": "Bf",
     "name": "Body Function",
     "category": "Genetics & Biology",
-    "example1": "A heart pumps blood efficiently"
+    "example1": "A heart pumps blood efficiently.",
+    "description": "How well your organs and body systems work."
   },
   {
     "number": 64,
     "symbol": "Sg",
     "name": "Sex & Gender",
     "category": "Genetics & Biology",
-    "example1": "Women face unique heart disease risks"
+    "example1": "Women face unique heart disease risks.",
+    "description": "Biological and social traits tied to being male, female, or non-binary."
   },
   {
     "number": 65,
     "symbol": "Ge",
     "name": "Genetics",
     "category": "Genetics & Biology",
-    "example1": "A family history of breast cancer"
+    "example1": "A family history of breast cancer.",
+    "description": "Traits and risks passed down from family DNA."
   },
   {
     "number": 66,
     "symbol": "Ss",
     "name": "Social Status",
     "category": "Socio-economic Circumstances",
-    "example1": "A CEO has more resources than a cashier"
+    "example1": "A CEO has more resources than a cashier.",
+    "description": "Where you stand in society affects your health opportunities."
   },
   {
     "number": 67,
     "symbol": "Re",
     "name": "Race & Ethnicity",
     "category": "Socio-economic Circumstances",
-    "example1": "Black patients may face bias in pain treatment"
+    "example1": "Black patients may face bias in pain treatment.",
+    "description": "Cultural identity and skin color can impact health and care received."
   },
   {
     "number": 68,
     "symbol": "Ed",
     "name": "Educational Attainment",
     "category": "Socio-economic Circumstances",
-    "example1": "High school grads live longer on average"
+    "example1": "High school grads live longer on average.",
+    "description": "More education usually leads to better jobs and health outcomes."
   },
   {
     "number": 69,
     "symbol": "Em",
     "name": "Employment Status",
     "category": "Socio-economic Circumstances",
-    "example1": "A person loses their job unexpectedly"
+    "example1": "A person loses their job unexpectedly.",
+    "description": "Whether someone has a job affects income, stress, and access to health care."
   },
   {
     "number": 70,
     "symbol": "Sc",
     "name": "Social Connectedness",
     "category": "Socio-economic Circumstances",
-    "example1": "Neighbors gather for weekly potlucks"
+    "example1": "Neighbors gather for weekly potlucks.",
+    "description": "Having strong, positive relationships helps your mind and body."
   },
   {
     "number": 71,
     "symbol": "Fi",
     "name": "Financial Stability",
     "category": "Socio-economic Circumstances",
-    "example1": "A family saves for emergencies"
+    "example1": "A family saves for emergencies.",
+    "description": "Having enough money to meet basic needs."
   },
   {
     "number": 72,
     "symbol": "Ct",
     "name": "Culture/Tradition",
     "category": "Socio-economic Circumstances",
-    "example1": "Family meals bring generations together"
+    "example1": "Family meals bring generations together.",
+    "description": "Shared customs that shape how people think about health and life."
   },
   {
     "number": 73,
     "symbol": "Ce",
     "name": "Childhood Experiences",
     "category": "Socio-economic Circumstances",
-    "example1": "A child grows up in a loving home"
+    "example1": "A child grows up in a loving home.",
+    "description": "Early life events shape future health and habits."
   },
   {
     "number": 74,
     "symbol": "St",
     "name": "Stigma & Discrimination",
     "category": "Socio-economic Circumstances",
-    "example1": "Someone hides their mental health diagnosis"
+    "example1": "Someone hides their mental health diagnosis.",
+    "description": "Negative treatment based on identity or condition that harms health."
   },
   {
     "number": 75,
     "symbol": "Oc",
     "name": "Occupation",
     "category": "Socio-economic Circumstances",
-    "example1": "A nurse faces daily high stress"
+    "example1": "A nurse faces daily high stress.",
+    "description": "Your job can impact stress, income, and exposure to hazards."
   },
   {
     "number": 76,
     "symbol": "Ic",
     "name": "Incarceration History",
     "category": "Socio-economic Circumstances",
-    "example1": "A person struggles to find housing after release"
+    "example1": "A person struggles to find housing after release.",
+    "description": "Past jail or prison time can affect future health and access."
   },
   {
     "number": 77,
     "symbol": "La",
     "name": "Language Barriers",
     "category": "Socio-economic Circumstances",
-    "example1": "A patient can\u2019t read medication labels"
+    "example1": "A patient can\u2019t read medication labels.",
+    "description": "Not speaking the main language can block access to care and info."
   },
   {
     "number": 78,
     "symbol": "Me",
     "name": "Mental Health Support",
     "category": "Socio-economic Circumstances",
-    "example1": "A teen gets therapy for anxiety"
+    "example1": "A teen gets therapy for anxiety.",
+    "description": "Access to counseling, therapy, and emotional support services."
   },
   {
     "number": 79,
     "symbol": "Ac",
     "name": "Access to Legal Resources",
     "category": "Socio-economic Circumstances",
-    "example1": "A tenant needs help fighting eviction"
+    "example1": "A tenant needs help fighting eviction.",
+    "description": "Having legal help can affect housing, work, and health rights."
   },
   {
     "number": 80,
     "symbol": "Cd",
     "name": "Civic Duty & Participation",
     "category": "Socio-economic Circumstances",
-    "example1": "Voting in local elections"
+    "example1": "Voting in local elections.",
+    "description": "Being involved in voting, volunteering, and decision-making in your community."
   },
   {
     "number": 81,
     "symbol": "Cc",
     "name": "Community Cohesion",
     "category": "Socio-economic Circumstances",
-    "example1": "A neighborhood forms a safety watch"
+    "example1": "A neighborhood forms a safety watch.",
+    "description": "How much neighbors trust and support one another."
   },
   {
     "number": 82,
     "symbol": "Pv",
     "name": "Poverty Level",
     "category": "Socio-economic Circumstances",
-    "example1": "A child skips meals regularly"
+    "example1": "A child skips meals regularly.",
+    "description": "Living with very limited income affects nearly all aspects of health."
   },
   {
     "number": 83,
     "symbol": "Ri",
     "name": "Religious Involvement",
     "category": "Socio-economic Circumstances",
-    "example1": "A person attends weekly services"
+    "example1": "A person attends weekly services.",
+    "description": "Practicing faith or spirituality through organized groups."
   },
   {
     "number": 84,
     "symbol": "Ho",
     "name": "Housing & Homelessness",
     "category": "Socio-economic Circumstances",
-    "example1": "A person sleeps in a shelter"
+    "example1": "A person sleeps in a shelter.",
+    "description": "Stable housing supports health; being unhoused increases risk."
   },
   {
     "number": 85,
     "symbol": "Jq",
     "name": "Job Quality & Workplace Safety",
     "category": "Socio-economic Circumstances",
-    "example1": "Poor lighting leads to falls at work"
+    "example1": "Poor lighting leads to falls at work.",
+    "description": "Safe, stable jobs help workers stay healthy and reduce stress."
   },
   {
     "number": 86,
     "symbol": "Sq",
     "name": "Socioeconomic Inequalities",
     "category": "Socio-economic Circumstances",
-    "example1": "Some groups live shorter lives due to poverty"
+    "example1": "Some groups live shorter lives due to poverty.",
+    "description": "Differences in income, education, and resources that impact health."
   },
   {
     "number": 87,
     "symbol": "Fu",
     "name": "Food Security & Hunger",
     "category": "Socio-economic Circumstances",
-    "example1": "Kids go to bed hungry"
+    "example1": "Kids go to bed hungry.",
+    "description": "Having enough healthy food to eat every day."
   },
   {
     "number": 88,
     "symbol": "Vi",
     "name": "Violence & Trauma Exposure",
     "category": "Socio-economic Circumstances",
-    "example1": "A child sees domestic violence"
+    "example1": "A child sees domestic violence.",
+    "description": "Witnessing or experiencing harm affects lifelong health."
   },
   {
     "number": 89,
     "symbol": "Sp",
     "name": "Social Participation",
     "category": "Socio-economic Circumstances",
-    "example1": "A senior joins a card group"
+    "example1": "A senior joins a card group.",
+    "description": "Being active in community and social life boosts well-being."
   }
 ]
