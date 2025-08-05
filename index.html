@@ -154,17 +154,18 @@
     }
 
     .info-card {
-      width: 1600px;
-      min-height: 160px;
-      margin-top: 10px;
-      padding: 30px 0;
-      background-color: #ffffff;
-      border: 4px solid #ddd;
-      display: flex;
-      flex-direction: row;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: background-color 0.3s, border-color 0.3s;
-    }
+  width: 1600px;
+  min-height: 160px;
+  margin-top: 10px;
+  padding: 24px 36px; /* reduced from 30px 60px */
+  background-color: #ffffff;
+  border: 4px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  gap: 20px; /* reduced from 30px */
+}
+
 
     .info-left, .info-right {
       width: 45%;
@@ -174,6 +175,7 @@
       justify-content: center;
     }
 
+
     .info-left {
       text-align: right;
       align-items: flex-end;
@@ -181,15 +183,36 @@
     }
 
     .info-right {
-      text-align: left;
-      align-items: flex-start;
-    }
+  text-align: left;
+  align-items: flex-start;
+  line-height: 1.6;
+}
 
-    .info-separator {
-      width: 1px;
-      height: 100px;
-      background-color: #ccc;
-    }
+
+
+.info-example {
+  font-size: 24px; 
+  line-height: 1.6;
+  color: #505871 !important;
+  white-space: normal;
+}
+
+
+.info-example strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #505871;
+}
+
+
+.info-separator {
+  width: 1px;
+  background-color: #ccc;
+  align-self: stretch;
+  margin: 0 16px;
+  height: auto;
+}
+
 
     .info-category {
       text-transform: uppercase;
@@ -224,10 +247,16 @@
     }
 
     .info-example {
-      font-size: 22px;
-      color: #505871 !important;
-      white-space: pre-wrap;
-    }
+  font-size: 16px;
+  line-height: 1.5;
+  color: #505871 !important;
+  white-space: normal;
+}
+
+.info-example div {
+  margin-bottom: 0; 
+}
+
 
 
     .percentages .category {
@@ -243,6 +272,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+.info-example div {
+  margin-bottom: 0; /* Remove default spacing */
 }
 
 .percentages {
@@ -380,18 +412,16 @@ const rowsMap = {
     const table = document.getElementById("health-table");
     const infoBox = document.getElementById("info-box");
     let lockedElement = null;
-
     function populateInfo(el) {
-      const key = normCat(el.category);
-      const clrBox = categoryColors[key]
-      const clr = hoverColors[key];
+  const key = normCat(el.category);
+  const clrBox = categoryColors[key];
+  const clr = hoverColors[key];
 
   // Set category text
   document.getElementById('info-category').textContent = el.category.toUpperCase();
   document.getElementById('info-category').style.color = '#505871';
 
-
-  // Set name and apply colored background styling
+  // Set name with colored background
   const nameBox = document.getElementById('info-name');
   nameBox.textContent = el.name;
   nameBox.style.backgroundColor = clrBox;
@@ -400,12 +430,22 @@ const rowsMap = {
   nameBox.style.borderRadius = '6px';
   nameBox.style.color = '#FFFFFF';
 
-  document.getElementById('info-example-label').textContent = 'Example';
-  document.getElementById('info-example').textContent = el.example1;
+  // Set labels and content
+  const label = document.getElementById('info-example-label');
+  const exampleBox = document.getElementById('info-example');
+
+
+  exampleBox.innerHTML = `
+  <p style="margin: 0; font-size: 20px; line-height: 1.4;"><strong>Description:</strong> ${el.description || 'No description available.'}</p>
+  <p style="margin: 0; font-size: 20px; line-height: 1.4;"><strong>Example:</strong> ${el.example1}</p>
+`;
+
+
 
   infoBox.style.backgroundColor = clr;
   infoBox.style.borderColor = clr;
 }
+
 
 
 function resetInfo() {
@@ -442,7 +482,7 @@ resetInfo();
           card.style.gridRow = getRow(el.number);
 
           card.innerHTML = `
-  <div class="flip-card-inner">
+          <div class="flip-card-inner">
     <div class="flip-card-front" style="background-color:${clr};">
       <div class="symbol">${el.symbol}</div>
     </div>
@@ -450,6 +490,8 @@ resetInfo();
       ${el.name}
     </div>
   </div>`;
+
+
 
 
 
