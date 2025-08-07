@@ -488,7 +488,7 @@ resetInfo();
       <div class="symbol">${el.symbol}</div>
     </div>
     <div class="flip-card-back" style="background-color:${clr};">
-      ${el.name}
+      ${el.name.replace(/\n/g, '<br>')}
     </div>
   </div>`;
 
